@@ -61,6 +61,24 @@ pip install -r app/requirements.txt
 $env:BOT_TOKEN="123456:ABC..."  # set your token
 python -m app.bot
 ```
+
+### Run Tests
+Create a dev virtual env (separate from production, optional):
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r app/requirements.txt
+pip install -r dev-requirements.txt
+pytest -q
+```
+Linux/macOS:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r app/requirements.txt
+pip install -r dev-requirements.txt
+pytest -q
+```
 On Linux/macOS the activation / env export differ:
 ```bash
 python -m venv .venv
