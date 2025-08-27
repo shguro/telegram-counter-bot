@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  bot:
+    build: .
+    container_name: telegram-counter-bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+      - DB_PATH=/app/data/entries.db
+    volumes:
+      - ./data:/app/data
+    # Add proxy vars if needed:
+    # - HTTP_PROXY=...
+    # - HTTPS_PROXY=...
