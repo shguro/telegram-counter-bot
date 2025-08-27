@@ -12,8 +12,8 @@ A lightweight Telegram bot that lets users add named counters and increment them
 - Docker + docker-compose setup
 
 ## Tech Stack
-- Python 3.11
-- [python-telegram-bot 21.x](https://docs.python-telegram-bot.org/)
+- Python 3.12
+- [python-telegram-bot 22.x](https://docs.python-telegram-bot.org/)
 - SQLite (file-based, WAL mode)
 - Docker / docker-compose
 
